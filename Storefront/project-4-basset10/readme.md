@@ -1,3 +1,1 @@
-#Skeleton App
-
-This is a very basic skeleton express app you can use to build from on labs and projects.
+This application allows the user to locate hard-to-find items at a nearby store by entering the item they need and their zip code.
