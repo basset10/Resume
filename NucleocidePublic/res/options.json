@@ -1,0 +1,6 @@
+/*[CLASS TRACE, DO NOT MODIFY -> com.hyprgloo.nucleocide.client.ClientOptions]*/
+{
+  "username" : "BASKET",
+  "directConnectIp" : "localhost",
+  "directConnectPort" : 25565
+}
