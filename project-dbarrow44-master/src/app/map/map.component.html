@@ -1,0 +1,72 @@
+<div class="row">
+  <div id="column" class="col-md-4">
+    <form #form="ngForm">
+      <div class="form-group-left">
+        <label for="ownerName"><h4>Owners Name</h4></label>
+        <input #userName type="text" class="form-control form-control-lg" id="ownerName" aria-label="Please enter your name" placeholder="Enter name" >
+      </div>
+      <div class="form-group-left">
+        <label for="petsname"><h4>Pets Name</h4></label>
+        <input #textName type="text" class="form-control form-control-lg" id="petsname" aria-label="Please enter your pets name" placeholder="Enter pet name">
+      </div>
+      <div class="row">
+        <div class="col-sm-7">
+          <mat-form-field >
+            <input #dateName matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4">
+          <div class="md-form">
+            <input
+              #realTimeName
+              type="time"
+              id="input"
+              class="form-control"
+              value="13:00"
+              mdbInput
+            />
+          </div>
+        </div>
+      </div>
+      <button type="button" [disabled]="formIsInvalid()" class="btn btn-primary" (click)="clickSubmit(userName.value, textName.value, dateName.value, realTimeName.value, selectedPark.name)" formtarget="_blank">Submit</button>
+    </form>
+  </div>
+  <div id="mapstuff" class="col-md-4">
+      <h2>Check in at a Local Dog Park</h2>
+      <!--<div id="mapID"></div>-->
+
+
+      <div id="mapID"></div>
+      <div id="mapForm">
+          <form>
+              <div id="form-group">
+                <select #parkName [(ngModel)]="selectedPark" name="park" class="form-control" (change)="selectorChange()">
+                  <option [ngValue]="null" [disabled]="true" >Select a park...</option>
+                  <option *ngFor="let marker of markers" [ngValue]="marker" >{{marker.name}}</option>
+                </select>
+              </div>
+              <!--<div [ngStyle]="{display: showButtons ? 'flex' : 'none'}" id="form-group-buttons">
+                  <button id="visitedButton" type="button" class="btn btn-primary" aria-label="visited button" (click)="clickVisited()" >I have visited this park</button>
+                  <button id="planToVisitButton" type="button" class="btn btn-primary" aria-label="plan to visit button" (click)="clickPlanToVisit()" >I plan to visit this park</button>
+              </div>-->
+            </form>
+      </div>
+  </div>
+  <div id="column" class="col-md-4">
+    <div class="row-scroll">
+    <ng-container *ngFor="let meetup of meetupList | async">
+      <script>console.log("meetup found!")</script>
+      <div class="col-10">
+        <span class="entry"><h4>{{meetup.user}} is visiting {{meetup.park}} with {{meetup.text}} on {{meetup.time}} at {{meetup.realTime}}</h4></span>
+        <hr color="black">
+      </div>
+    </ng-container>
+  </div>
+
+  </div>
+</div>
+
+
+

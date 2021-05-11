@@ -1,0 +1,26 @@
+
+/* You can add global styles to this file, and also import other style files 
+body {
+    background-image: url("../src/assets/bird.JPG");
+    background-color: rgb(255, 255, 255); 
+    height: 800px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-bottom: 1000px;
+}
+*/
+/*
+.mat-form-field input{
+    background-color: white;
+    border-radius: 2%;
+}
+*/
+.mat-calendar {
+    background-image: url("../src/assets/jasper.jpg");
+    background-size: cover;
+    background-position: center ;
+    color: white;
+  }
+

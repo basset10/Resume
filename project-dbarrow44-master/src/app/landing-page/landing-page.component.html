@@ -1,0 +1,85 @@
+<div class="landing-page-body">
+    <div id="intro">
+        <header>
+            <h1>
+                Tribute
+            </h1>
+            <h2>
+                This isn't the greatest project ever created.
+                <br>
+                This is just a <a href="https://www.youtube.com/watch?v=7PkC-0DIrVI" id="tribute-link">tribute</a>..
+            </h2>
+                <br>
+        </header>
+    </div>
+    <div>
+        <section id="description">
+            <div id="description-text">
+                <h2>
+                    This is my dog, Bird.
+                    <br>
+                    <br>
+                    A few months ago she was diagnosed with cancer. At the time of the diagnosis, in December 2020, she was given around three months max.
+                    <br>
+                    <br>
+                        In Loving Memory
+                        <br>
+                        02/27/2021
+                        <br>
+                        <br>
+                        <!--Trying to get the video to load on click-->
+                        <button id="birdButton" class="btn btn-primary btn-lg font-weight-bold" aria-label="Button to tiktok video" (click)="ShowVideo()">Bird</button>
+                        <div [ngStyle]="{display: showVideo ? 'block' : 'none'}">
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@barrowc97/video/6934139265030851845" data-video-id="6934139265030851845" style="max-width: 605px;min-width: 325px;" >
+                            <section> <a target="_blank" title="@barrowc97" href="https://www.tiktok.com/@barrowc97">@barrowc97</a>
+                                <p>
+                                    <a title="rip" target="_blank" href="https://www.tiktok.com/tag/rip">##rip</a>
+                                    <a title="mygirl" target="_blank" href="https://www.tiktok.com/tag/mygirl">##mygirl</a> <a title="birddog" target="_blank" href="https://www.tiktok.com/tag/birddog">##birddog</a> <a title="cancersucks" target="_blank" href="https://www.tiktok.com/tag/cancersucks">##cancersucks</a>
+                                </p>
+                                <a target="_blank" title="♬ Home - Edith Whiskers" href="https://www.tiktok.com/music/Home-6773436955838401285" aria-label="link to Home song">♬ Home - Edith Whiskers</a>
+                            </section>
+                        </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                        <!--End region-->
+                        </div>
+                        <br>  
+                    <br>
+                    <br>
+                    Everyone has always said once a photo is out on the internet, it's there forever. So I figured what better way to immortalize her than
+                    to create her own little doggy social media. Too many apps in todays climate are focused on censoring groups of people they don't agree with and
+                    pitting red versus blue or black versus white. This app won't do any of that.
+                    This app is for pet owners who just want to spread cute pics of their favorite pets. Science suggests that looking at these
+                    <a href="https://www.cnn.com/2020/09/27/us/watching-cute-animals-study-scn-trnd/index.html" aria-label="Link to cute animal study">pictures</a> is good for your health.
+                    Just animals along with their likes, hobbies, hopes and dreams. At least whatever we think that they would be.
+                    With <a href="https://www.nbcnews.com/health/health-news/major-depression-rise-among-everyone-new-data-shows-n873146" aria-label="Link to Depression Study">depression</a>
+                    on the rise, afflicting more than one third of US citizens, people need a platform where they aren't judged every second of the day.
+                </h2>
+            </div>
+        </section>
+    </div>
+    <div>
+        <section id="potential-apps">
+            <div id="potential-app-text">
+                <h1>
+                    Potential Apps
+                    <br>
+                    <br>
+                    <ul>
+                        <h2>
+                            <li><span>Walking Service</span> - An app that connects you with people that will walk your dog for a small fee. Read walker reviews and pick the best one for your pet.
+                                        I like to imagine Uber but for finding people to walk your pet.</li>
+                            <br>
+                            <li><span>Adoption Search</span> - An app that scrapes data about <a href="https://www.petfinder.com/search/dogs-for-adoption/us/fl/32564/" aria-label="link to pet adoption center">pets up for adoption</a> within a certain distance.</li>
+                            <br>
+                            <li><span>Park Meetups</span> - Schedule and plan park meetups with your pets favorite friends.</li>
+                        </h2>
+                    </ul>
+                </h1>
+            </div>
+        </section>
+
+            <!--<app-map></app-map>-->
+
+            <app-footer></app-footer>
+    </div>
+</div>

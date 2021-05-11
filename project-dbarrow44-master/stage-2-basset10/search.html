@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Zack Starrett">
+    <meta name="description" content="Healthy eating web application">
+    <meta name="keywords" content="recipe, food, nutrition">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Stage 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans">
+    <link rel="icon"
+      type="image/png"
+      href="img/iconfork.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/iconfork.png" alt="logo" />
+        <h2>Project Stage 2: Interactive Data</h2>
+    </div>
+    <div class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="search.html">Search</a>
+      </div>
+<main>
+
+    <form class="form-inline" method="GET">
+        <div class="form-group">
+          <label for="searchQuery" class="search-label">Enter a search term to suggest a random food!</label>
+          <input type="text" name="term" id="searchQuery" class="form-control">
+          <button type="submit" class="btn btn-primary" id="search-button">
+            <i class="fa fa-search" aria-hidden="true"></i> Search
+          </button>
+        </div>
+      </form>
+
+    <div class="card-body">
+        <p class="suggestions">Suggestions: apple pie, vegeterian, teriyaki chicken...</p>
+    </div>
+
+</main>
+    <footer>
+        <p class="footer-left"><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="Search.html">Search</a></p>
+        <p class="footer-right">© 2021 Zack Starrett | <a href="mailto: zas6@students.uwf.edu">Contact Link</a></p>
+        <p></p>
+    </footer>
+
+      <!--Fetch and Promise polyfills-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.js"></script>
+
+      <!-- Load JavaScript libraries here -->
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

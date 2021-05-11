@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Dustin Barrow">
+    <meta name="description" content="Project Proposal">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!--Map stuff for Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <title>Codename Dorado Falls</title>
+</head>
+<body>
+    <div class="navbar" aria-label="menu">
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-paw"></i> Home</a></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#description" aria-label="description">Description</a></li>
+                <li><a href="#potential-apps" aria-label="potential apps">Potential Apps</a></li>
+                <li><a href="./park-meetups.html" aria-label="park meetups page">Park Meetups</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="intro">
+        <header>
+            <h1>
+                Tribute
+            </h1>
+            <h2>
+                This isn't the greatest project ever created. 
+                <br>
+                This is just a <a href="https://www.youtube.com/watch?v=7PkC-0DIrVI" id="tribute-link">tribute</a>.. 
+            </h2>
+                <br>
+        </header>
+    </div>
+    <div>
+        <section id="description">
+            <div id="description-text">
+                <h2>
+                    This is my dog, Bird.
+                    <br>
+                    <br>
+                    A few months ago she was diagnosed with cancer. At the time of the diagnosis, in December 2020, she was given around three months max.
+                    <br>
+                    <br>
+                        In Loving Memory
+                        <br>
+                        <br>
+                        <button id="birdButton" class="btn btn-primary btn-lg font-weight-bold" aria-label="Button to tiktok video">Bird</button>
+                        <br> 
+                        <br>
+                        02/27/2021
+                    <br>
+                    <br>
+                    Everyone has always said once a photo is out on the internet, it's there forever. So I figured what better way to immortalize her than 
+                    to create her own little doggy social media. Too many apps in todays climate are focused on censoring groups of people they don't agree with and 
+                    pitting red versus blue or black versus white. This app won't do any of that.
+                    This app is for pet owners who just want to spread cute pics of their favorite pets. Science suggests that looking at these 
+                    <a href="https://www.cnn.com/2020/09/27/us/watching-cute-animals-study-scn-trnd/index.html" aria-label="Link to cute animal study">pictures</a> is good for your health.   
+                    Just animals along with their likes, hobbies, hopes and dreams. At least whatever we think that they would be. 
+                    With <a href="https://www.nbcnews.com/health/health-news/major-depression-rise-among-everyone-new-data-shows-n873146" aria-label="Link to Depression Study">depression</a> 
+                    on the rise, afflicting more than one third of US citizens, people need a platform where they aren't judged every second of the day.
+                </h2>
+            </div>
+        </section>
+    </div>
+    <div>
+        <section id="potential-apps">
+            <div id="potential-app-text">
+                <h1>
+                    Potential Apps
+                    <br>
+                    <br>
+                    <ul>
+                        <h2>
+                            <li><span>Walking Service</span> - An app that connects you with people that will walk your dog for a small fee. Read walker reviews and pick the best one for your pet.
+                                        I like to imagine Uber but for finding people to walk your pet.</li>
+                            <br>
+                            <li><span>Adoption Search</span> - An app that scrapes data about <a href="https://www.petfinder.com/search/dogs-for-adoption/us/fl/32564/" aria-label="link to pet adoption center">pets up for adoption</a> within a certain distance.</li>
+                            <br>
+                            <li><span>Park Meetups</span> - Schedule and plan park meetups with your pets favorite friends.</li>
+                        </h2>
+                    </ul>
+                </h1>
+            </div>
+        </section>
+    </div>
+
+    <div id="mapstuff">
+        <h2>Find Pensacola Dog Parks</h2>
+        <div id="mapID"></div>
+        <div id="btn-toolbar" class="row justify-content-center mx-auto">
+            <button id="prevButton" type="button" class="btn btn-primary" aria-label="previous button" >Previous</button>
+            <button id="nextButton"type="button" class="btn btn-primary" aria-label="next button">Next</button>
+        </div>
+    </div>>
+
+    <footer>
+        <p>&copy; DnD Productions 2021</p>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Leaflet js file -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script src="../src/app/js/index.js"></script>
+</html>
